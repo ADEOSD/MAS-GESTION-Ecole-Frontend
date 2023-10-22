@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ClassesRoutingModule } from './classes-routing.module';
 import { ClassesComponent } from './classes.component';
+import { ListClassesComponent } from './list-classes/list-classes.component';
 
 
 @NgModule({
   declarations: [
-    ClassesComponent
+    ClassesComponent,
+    ListClassesComponent
   ],
   imports: [
     CommonModule,

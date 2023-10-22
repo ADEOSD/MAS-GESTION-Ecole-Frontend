@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ClassesComponent {
 
+
+  constructor() { }
+
+  ngOnInit() {
+  
+  }
+  
 }
