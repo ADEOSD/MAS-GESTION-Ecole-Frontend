@@ -111,10 +111,10 @@
                     <div class="col-lg-3 col-sm-6 courses-col" *ngFor="let item of courses">
                         <div class="single-courses mt-30">
                             <a href="#" class="category">#Science</a>
-                            <h4 class="courses-title"><a href="courses-details.html">Computer Science & Engineering</a></h4>
+                            <h4 class="courses-title"><a href="courses-details.html">{{item.description}}</a></h4>
                             <div class="duration-fee">
-                                <p class="duration">{{item.nom}}<span> 4 year</span></p>
-                                <p class="fee">Fee: <span> $540</span></p>
+                                <p class="duration">{{item.nom}}<span> {{item.format}}</span></p>
+                                <p class="duration"><span> {{item.niveau}}</span></p>
                             </div>
                             <div class="rating">
                                 <span>Rating: </span>
