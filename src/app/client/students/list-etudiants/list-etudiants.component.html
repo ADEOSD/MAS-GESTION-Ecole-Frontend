@@ -1,0 +1,121 @@
+
+
+<body>
+ 
+    
+    <!--====== Page Banner Start ======-->
+
+    <section class="page-banner">
+        <div class="page-banner-bg bg_cover" style="background-image: url(assets/images/page-banner.webp);">
+            <div class="container">
+                <div class="banner-content text-center">
+                    <h2 class="title">Student Details</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Page Banner Ends ======-->
+
+
+    <section class="teacher-details">
+        <div class="container">
+            <div class="row teachers-row justify-content-center">
+                <div>
+                    <div class="row"  classname="justify-content-center" *ngFor="let e of etudiants">
+ <div class="col-lg-5 col-md-6 col-sm-8 teachers-col">
+                            <div class="single-teacher-details mt-50 text-center">
+                                <div class="teacher-social">
+                                    <ul class="social">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="teacher-image">
+                                        <a href="teacher-details.html">
+                                        <img src="assets/images/teachers/teacher-2.webp" width="373" height="503" alt="teacher">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 teachers-col">
+                            <div class="teacher-details-content mt-45">
+                                <h4 class="teacher-name">{{e.nom}}</h4>
+                                <span class="designation">{{e.prenom }}</span>
+                                <span class="department">{{e.adresse}}</span>
+                                <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need These cases are perfectly  simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents</p>
+                                <ul class="teacher-contact">
+                                    <li><strong>Email:</strong> <a href="#">{{e.email}}</a></li>
+                                    <li><strong>Phone:</strong> <a href="#">+98745 325 698</a></li>
+                                    <li><strong>Skype:</strong> <a href="#">zesica.luice</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+              
+            </div>
+
+          
+        </div>
+    </section>
+
+    <!--====== Teacher Details Ends ======-->
+    
+    <!--====== Newsletter Start ======-->
+
+    <section class="newsletter-area-2">
+        <div class="container">
+            <div class="newsletter-wrapper bg_cover" style="background-image: url(assets/images/newsletter-bg-1.webp);">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="section-title-2 mt-25">
+                            <h2 class="title">Subscribe our Newsletter</h2>
+                            <span class="line"></span>
+                            <p>Even slightly believable. If you are going use a passage of Lorem Ipsum need some</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="newsletter-form mt-30">
+                            <form action="#">
+                                <input type="text" placeholder="Enter your email here">
+                                <button class="main-btn main-btn-2">Subscribe now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== Newsletter Ends ======-->
+    
+   
+
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+    
+    <!--====== Start ======-->
+
+<!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    
+    
+</body>
