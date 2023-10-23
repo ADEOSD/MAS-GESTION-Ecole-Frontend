@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ClientComponent } from './client.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from '../utility/app.guard';
 
 const routes: Routes = [{ path: '', component: ClientComponent ,children:[
   {path:'',component:HomeComponentComponent},
@@ -10,7 +11,7 @@ const routes: Routes = [{ path: '', component: ClientComponent ,children:[
 
 ]
 },
-  { path: 'courses', loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule) },
+  { path: 'courses', loadChildren: () => import('./courses/courses.module').then(m => m.CoursesModule),canActivate:[AuthGuard]  },
   { path: 'events', loadChildren: () => import('./events/events.module').then(m => m.EventsModule) },
   { path: 'teachers', loadChildren: () => import('./teachers/teachers.module').then(m => m.TeachersModule) },
   { path: 'students', loadChildren: () => import('./students/students.module').then(m => m.StudentsModule) },

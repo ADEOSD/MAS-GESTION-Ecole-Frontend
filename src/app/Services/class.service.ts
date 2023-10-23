@@ -6,7 +6,7 @@ import { Class } from 'src/app/models/Classes';
   providedIn: 'root'
 })
 export class ClassService {
-  private apiUrl = 'http://localhost:8086/api/classes/getAllClasses';
+  private apiUrl = 'http://localhost:8084/api/cours/getall';
   constructor(private http: HttpClient) {
 
    }
